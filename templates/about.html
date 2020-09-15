@@ -3,7 +3,11 @@
 <!-- Head of the HTML-->
 
 <head>
-    <title></title>
+    {% if title %}
+    <title>Flask Blog - {{title}}</title>
+    {% else %}
+    <title>Flask Blog</title>
+    {% endif %}
 </head>
 
 <!-- Body of HTML-->
